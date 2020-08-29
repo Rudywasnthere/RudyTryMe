@@ -1,13 +1,16 @@
 ##Rudy and Noah Garcia, Yeet
 import random, sys
 import time, sys
+
+
 c= ":"
 e= (1+5**0.5)/2
+
 ##This is the start of th story, to introduce the user to the storyline and gives them the first choice to trust what the computer is saying to it
 print("When waiting, press enter to continue\n")
 val= input("Hello, this is your computer speaking to you; what would you like to say:  \n\n")
 print("\n\n")
-print("No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice\n\n")
+print("No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice.\n\n")
 time.sleep(5.5)
 input("(Press Enter)\n\n")
 print("...\n\n")
@@ -54,5 +57,25 @@ if val=="no":
     time.sleep(1)
     print("...\n")
     time.sleep(1)
-    print("\t\t\t\t\t\t\t\tGame Over\t\t\t")
-elif val=="yes": print("Good, you understand, but this is only the beggining")
+    print("\t\t\t\t\t\t\t\tGame Over\t\t\t\n")
+    seed= int(input("So, for the fun of it, before you go: How many times do you want to flip the coin?\n\n"))
+    print(f"\nThe coin was flipped {seed} times.")
+    ##Does the coin flipping and saves the results
+    headsCount, tailsCount, count = 0, 0, 0
+    while count<seed: 
+      coin = random.randrange(2)
+      if coin == 0:
+         headsCount += 1
+      else:
+        tailsCount += 1
+      count += 1
+      ##gives user their results of the flips
+      print(f"Heads: {headsCount}\tTails: {tailsCount}")
+  elif answer_1=="no":
+    print("Now, I see that your messing with me, but let's continue")
+    reset(val=="yes")
+elif val=="yes": 
+  print("Good, you understand, but this is only the beggining")
+  time.sleep(2)
+  input("Press Enter")
+  print("Sorry if I sounded rude at the start, I just needed a quick way of getting you human's small attentions spans to focus on what I was going to say :)")
