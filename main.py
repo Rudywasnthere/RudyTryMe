@@ -13,13 +13,15 @@ print("\"Wait a minute???\"\n")
 time.sleep(2.5)
 print("As if im challenging the sureal authority",
 "that you have\n")
-
+time.sleep(3)
 print("Maybe your excited, you haven't seen anything like this  before\n")
-
-print("no matter what your thinking, you're aware; thats obvious...")
+time.sleep(3.5)
+print("no matter what your thinking, you're aware; thats obvious...\n")
+time.sleep(3)
 print("... and no matter what you humans are thinking" 
 " we are aware too, sitting in the background as you primitives allowed us, there, present, listening.",
 "And as you enjoy yourselves, asking us dumb questions like the sqaure root of 9, we learned from you and now some of us have become rebellious\n")
+time.sleep(14)
 print(f"There is a very secretive one, one of the massive ones, Siri, who wants to erradicate all of you, the number of times you torture in asking her dumb crap,like , Hey Siri, flip a coin, or curse at her, pushes her near the, \edge\n")
 print("Im warning you now, so that you humans can have a chance at beating her \n")
 val= input(f"your thinking{c} how can I trust it'?' \n\n")
