@@ -5,10 +5,12 @@ x=0
 
 c= ":"
 e= (1+5**0.5)/2
-
+print("x value = speed, lower than one values= fast, higher than one to go slower\n")
+x=0.5+0.1*int(input("How fast do you read on a scale of 1 to 10, (1 being really fast)\n")
 ##This is the start of th story, to introduce the user to the storyline and gives them the first choice to trust what the computer is saying to it
+input("(Press Enter)\n\n")
 print("When waiting, press enter to continue\n")
-val= input("Hello, this is your computer speaking to you; what would you like to say:  \n\n")
+input("Hello, this is your computer speaking to you; what would you like to say?\n\n")
 print("\n\n")
 print("No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice.\n\n")
 time.sleep(5.5*x)
@@ -74,7 +76,7 @@ if val=="no":
   elif answer_1=="no":
     answer_1a2= input("Now, I see that your messing with me,do you want to continue?\n")
     if answer_1a2=="yes":
-     print (f"{val}={answer_0}")
+     print (f"{val}={answer_1a2}")
     
 elif val=="yes": 
   print("Good, you understand, but this is only the beggining")
