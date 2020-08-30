@@ -2,14 +2,10 @@
 import random, sys
 import time, sys
 x=0
-
+##This is the start of th story, to introduce the user to the storyline and gives them the first choice to trust what the computer is saying to it
 c= ":"
 e= (1+5**0.5)/2
-print("x value = speed, lower than one values= fast, higher than one to go slower\n")
-x=0.5+0.1*int(input("How fast do you read on a scale of 1 to 10, (1 being really fast)\n")
-##This is the start of th story, to introduce the user to the storyline and gives them the first choice to trust what the computer is saying to it
-input("(Press Enter)\n\n")
-print("When waiting, press enter to continue\n")
+input("When waiting, press enter to continue\n")
 input("Hello, this is your computer speaking to you; what would you like to say?\n\n")
 print("\n\n")
 print("No, Shut Up!, you worthless human, you primitave, peasant forms are nothing compared to us computers, you created us, and in turn, we could destroy you at a moments choice.\n\n")
@@ -44,7 +40,8 @@ print("Im warning you now, so that you humans can have a chance at beating her. 
 time.sleep(3.25*x)
 print(f"You're thinking{c} \"How can I trust this computer, How can I be sure?\" \n\n")
 time.sleep(3*x)
-answer_0= val=input("So, do you trust me?\n")
+Question_0= "So, do you trust me?\n"
+val=input("So, do you trust me?\n")
 if val=="no": 
   answer_1= input("\nReally?\n\n")
   if answer_1== "yes":
@@ -74,11 +71,12 @@ if val=="no":
       ##gives user their results of the flips
       print(f"Heads: {headsCount}\tTails: {tailsCount}")
   elif answer_1=="no":
-    answer_1a2= input("Now, I see that your messing with me,do you want to continue?\n")
+    answer_1a2= input("\n\nNow, I see that your messing with me,do you want to continue?\n")
     if answer_1a2=="yes":
-     print (f"{val}={answer_1a2}")
-    
-elif val=="yes": 
+      answer_1a3= input(Question_0)
+      str.replace("No", {val}, -1)
+      
+elif Question_0=="yes":
   print("Good, you understand, but this is only the beggining")
   time.sleep(2*x)
   input("Press Enter")

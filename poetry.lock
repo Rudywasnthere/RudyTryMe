@@ -1,7 +1,31 @@
-package = []
+[[package]]
+category = "main"
+description = "Decorators for Humans"
+name = "decorator"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+version = "4.4.2"
+
+[[package]]
+category = "main"
+description = "@self decorator makes method return self (jQuery-like chaining)"
+name = "self"
+optional = false
+python-versions = "*"
+version = "2020.7.1"
+
+[package.dependencies]
+decorator = "*"
 
 [metadata]
-content-hash = "fafb334cb038533f851c23d0b63254223abf72ce4f02987e7064b0c95566699a"
+content-hash = "58d17caa6f36fa8cd3aa1294fe07e795a34b3bba4ad5b2bfc3b7872f07e06afa"
 python-versions = "^3.8"
 
 [metadata.files]
+decorator = [
+    {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
+    {file = "decorator-4.4.2.tar.gz", hash = "sha256:e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7"},
+]
+self = [
+    {file = "self-2020.7.1.tar.gz", hash = "sha256:c230d5e21fffe2785802d3b4d3fb0b184d29bd0c733d0ddaff3abf8924c84b19"},
+]
